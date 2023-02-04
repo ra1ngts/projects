@@ -1,16 +1,16 @@
-"""Пример анализа валютного портфеля"""
+"""Пример анализа валютного портфеля."""
 import json
 from copy import deepcopy
 
 
-def save_data(data):  # Сохранение данных.
-    with open("data.json", "w") as f:  # Открытие файла.
-        json.dump(data, f, indent=2)  # Сохранение в файл.
+def save_data(data):
+    with open("data.json", "w") as f:
+        json.dump(data, f, indent=2)
 
 
-def load_data():  # Загрузка данных.
-    with open("data.json") as f:  # Открытие файла.
-        data = json.load(f)  # Считывание данных из файла
+def load_data():
+    with open("data.json") as f:
+        data = json.load(f)
 
     return data
 
