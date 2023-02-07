@@ -3,7 +3,7 @@
 ---
 
 #### About programme :
-- The programme __"Analysis of the currency portfolio"__ - allows you to monitor currency data, weekly.
+- __"Currency analysis"__ - allows you to monitor currency data, weekly.
 
 #### Peculiarities :
 - Allows you to add weeks.
@@ -22,8 +22,9 @@
 - The programme does not have a ***graphical interface***.
 
 #### Install :
-- File names: __currency_analysis.py__, __data.json__
-- Click the `Code` button in the top right corner. A menu will pop up in which you need to select `Download ZIP`.
+- Folder name: __currency_analysis__
+  - Files in a folder: `currency_analysis.py` and `data.json`
+- On the repository page сlick the `Code` button in the top right corner. A menu will pop up in which you need to select `Download ZIP`.
 - Save and extract the folder to any convenient location.
 
 #### Language :
@@ -39,7 +40,7 @@
 ---
 
 #### About programme :
-- The programme __"Credit wallet"__ - is an imitation of the work of a credit wallet..
+- __"Credit wallet"__ - is an imitation of the work of a credit wallet.
 
 #### Peculiarities :
 - There are different levels of credit cards.
