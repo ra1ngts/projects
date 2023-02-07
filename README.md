@@ -88,3 +88,42 @@
 | Rank | Languages |
 |-----:|-----------|
 |     1| Python    |
+
+### :closed_lock_with_key: "Password manager"
+
+---
+
+#### About programme :
+- __"Password manager"__ - program for writing and storing passwords from web sites.
+
+#### Peculiarities :
+- Allows you to add a password.
+- Allows you to generate a password (two difficulty levels to choose from).
+- Allows you to find the password.
+- Allows you to find duplicate passwords.
+- Allows you to change the password.
+- Allows you to remove the password.
+- Allows you to save all information in a separate *.json
+
+#### For what :
+- A practice while learning.
+
+#### Visualization :
+- Visualization is carried out by means of data output to the console. 
+- The programme does not have a ***graphical interface***.
+
+#### Install :
+- Folder name: __pass_manage__
+  - Files in a folder: `pass_manage.py` and `user.json`
+- On the repository page сlick the `Code` button in the top right corner. A menu will pop up in which you need to select `Download ZIP`.
+- Save and extract the folder to any convenient location.
+
+#### Language :
+| Rank | Languages |
+|-----:|-----------|
+|     1| Python    |
+
+#### Demonstration :
+![Password manager_scr_1](https://user-images.githubusercontent.com/122100029/217311351-401f3076-9d2b-47d5-9f9f-f8f8da00e6a7.jpg)
+![Password manager_scr_2](https://user-images.githubusercontent.com/122100029/217311370-5e080ed3-545e-46b3-844f-df1786bb378f.jpg)
+
