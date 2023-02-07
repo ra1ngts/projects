@@ -61,3 +61,30 @@
 | Rank | Languages |
 |-----:|-----------|
 |     1| Python    |
+
+### :lock: "Password generator"
+
+---
+
+#### About programme :
+- __"Password generator"__ - program for creating unique passwords from letters, numbers and symbols.
+
+#### Peculiarities :
+- You can set the password length.
+
+#### For what :
+- A practice while learning.
+
+#### Visualization :
+- Visualization is carried out by means of data output to the console. 
+- The programme does not have a ***graphical interface***.
+
+#### Install :
+- File name: __pass_gen.py__
+- Click the `Code` button in the top right corner. A menu will pop up in which you need to select `Download ZIP`.
+- Save and extract the folder to any convenient location.
+
+#### Language :
+| Rank | Languages |
+|-----:|-----------|
+|     1| Python    |
