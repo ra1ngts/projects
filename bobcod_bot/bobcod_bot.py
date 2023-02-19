@@ -15,8 +15,8 @@ def start_help(message: telebot.types.Message):
            \n/img - Выводит кнопку для поиска изображений\
            \n/srch - Выводит поисковые системы\
            \n/exrates - Выводит курсы обмена валют и инструкцию\n\
-           \n<b>Другие возможности</b>\n1. Возможность отправить голосовое сообщение боту\n2. Возможность отправить боту" \
-           f" изображение"
+           \n<b>Другие возможности</b>\n1. Возможность отправить голосовое сообщение боту\n" \
+           f"2. Возможность отправить боту изображение"
     bot.reply_to(message, text)
 
 
@@ -112,7 +112,7 @@ def currencies(message: telebot.types.Message):
            ( <b>Валюта Б</b> )\
            ( <b>Количество Б в А</b> )\n\n<b>Валюта А</b> - Название валюты, цену которой хотите узнать" \
            "\n<b>Валюта Б</b> - Название валюты, в которой надо узнать цену первой валюты" \
-           "\n<b>Количество Б в А</b> - Количество первой валюты\n\n<b>Доступная валюта</b>"
+           "\n<b>Количество Б в А</b> - Количество первой валюты\n\n<b>Доступные валюты</b>"
     for key in currencies_.keys():
         text = "\n".join((text, key))
     bot.reply_to(message, text)
@@ -129,7 +129,8 @@ def converter(message: telebot.types.Message):
         try:
             values = message.text.split(" ")
             if len(values) != 3:
-                raise CommandException(f"Я не знаю пока такой команды :(")
+                raise CommandException(f"<b>{message.chat.username}</b> Что бы узнать список доступных команд введите:"
+                                       f" /help")
             quote, base, amount = values
             answer = ExchangeConverter.get_price(quote, base, amount)
         except CommandException as e:
