@@ -1,4 +1,4 @@
-TOKEN = "5973029943:AAFuu2G2sZHjYVAtV2Xxgu9jzKR_r0_3TKc"
+TOKEN = ""
 
 currencies_ = {
     "доллар": "USD",
@@ -7,5 +7,5 @@ currencies_ = {
 }
 
 headers = {
-    "apikey": "6kPFJ11Dwx3rwCw33lXQFVOnnZ3ReGvN"
+    "apikey": ""
 }
