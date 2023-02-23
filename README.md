@@ -127,3 +127,100 @@
 ![Password manager_scr_1](https://user-images.githubusercontent.com/122100029/217311351-401f3076-9d2b-47d5-9f9f-f8f8da00e6a7.jpg)
 ![Password manager_scr_2](https://user-images.githubusercontent.com/122100029/217311370-5e080ed3-545e-46b3-844f-df1786bb378f.jpg)
 
+### :robot: "BobCodBot"
+
+---
+
+#### About programme :
+- __"BobCodBot"__ - This is a smart telegram bot that can do a lot.
+
+#### Peculiarities :
+- Lets you know the current weather
+- Let you know the world's entertainment news
+- Allows you to search for images
+- Allows you to use search engines
+- Allows you to exchange currencies at the current rate
+
+#### For what :
+- A practice while learning.
+
+#### Visualization :
+- Interaction with the bot and displaying information is carried out directly in the ***"Telegram"*** application. 
+
+#### Install :
+- Folder name: __bobcod_bot__
+  - Files in a folder: `bobcod_bot.py`, `extensions.py` and `cfg.py`
+- On the repository page сlick the `Code` button in the top right corner. A menu will pop up in which you need to select `Download ZIP`.
+- Save and extract the folder to any convenient location.
+
+#### Language :
+| Rank | Languages |
+|-----:|-----------|
+|     1| Python    |
+
+#### Demonstration :
+![BobCod_Bot_scr_1](https://user-images.githubusercontent.com/122100029/219960792-d3b76938-fc72-4cd7-9a19-bac9a79c1ccc.jpg)
+![BobCod_Bot_scr_2](https://user-images.githubusercontent.com/122100029/219960805-59a9ec1b-81f7-4de1-9f1c-512a05a73f93.jpg)
+![BobCod_Bot_scr_3](https://user-images.githubusercontent.com/122100029/219960815-38c63951-d98b-483e-a6ea-b74ea46c860a.jpg)
+
+### :robot: "CryptossoBot"
+
+---
+
+#### About programme :
+- __"CryptossoBot"__ - This is a telegram bot that can count cryptocurrency in another currency.
+
+#### Peculiarities :
+- Сan convert one cryptocurrency to another.
+
+#### For what :
+- A practice while learning.
+
+#### Visualization :
+- Interaction with the bot and displaying information is carried out directly in the ***"Telegram"*** application. 
+
+#### Install :
+- Folder name: __cryptosso_bot__
+  - Files in a folder: `сryptosso_bot.py`, `extensions.py` and `cfg.py`
+- On the repository page сlick the `Code` button in the top right corner. A menu will pop up in which you need to select `Download ZIP`.
+- Save and extract the folder to any convenient location.
+
+#### Language :
+| Rank | Languages |
+|-----:|-----------|
+|     1| Python    |
+
+#### Demonstration :
+![Cryptosso_Bot_scr_1](https://user-images.githubusercontent.com/122100029/220145501-a72d353e-b345-4dd9-a3e8-fe9e1a0190c3.jpg)
+![Cryptosso_Bot_scr_2](https://user-images.githubusercontent.com/122100029/220145525-133cee66-fd38-4d25-bf72-e8591f68aa39.jpg)
+
+### :robot: "Ex_Changer_Bot"
+
+---
+
+#### About programme :
+- __"Ex_Changer_Bot"__ - This is a telegram bot that calculates exchange rates.
+
+#### Peculiarities :
+- Able to count one currency into another.
+
+#### For what :
+- A practice while learning.
+
+#### Visualization :
+- Interaction with the bot and displaying information is carried out directly in the ***"Telegram"*** application. 
+
+#### Install :
+- Folder name: __exch_bot__
+  - Files in a folder: `exch_bot.py`, `extensions.py` and `cfg.py`
+- On the repository page сlick the `Code` button in the top right corner. A menu will pop up in which you need to select `Download ZIP`.
+- Save and extract the folder to any convenient location.
+
+#### Language :
+| Rank | Languages |
+|-----:|-----------|
+|     1| Python    |
+
+#### Demonstration :
+![Exchanger_Bot_scr_1](https://user-images.githubusercontent.com/122100029/220149203-4365a6d8-b088-4561-a67a-14ee908e7485.jpg)
+![Exchanger_Bot_scr_2](https://user-images.githubusercontent.com/122100029/220149222-a678e8b3-ec61-48f1-91ba-cc7db568d3f5.jpg)
