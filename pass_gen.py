@@ -1,10 +1,10 @@
 """Генератор паролей."""
-import random
-import string
+from random import sample
+from string import ascii_letters, ascii_uppercase, digits
 
-letters = string.ascii_letters + string.ascii_uppercase + string.digits + "!?_"
+letters = ascii_letters + ascii_uppercase + digits + "!?_"
 len_pass = 8
-uniq_pass = "".join(random.sample(letters, len_pass))
+uniq_pass = "".join(sample(letters, len_pass))
 print()
 print("Генератор паролей")
 print("-" * 17)
