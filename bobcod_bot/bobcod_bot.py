@@ -1,22 +1,24 @@
 from telebot import *
-from cfg import TOKEN, params, api, currencies_
+from cfg import TOKEN, params, api, currencies_, headers
 from extensions import CommandException, ExchangeConverter
 import requests
 import json
+import datetime
 
 bot = telebot.TeleBot(TOKEN, parse_mode="HTML")
 
 
 @bot.message_handler(commands=["start", "help"])
 def start_help(message: telebot.types.Message):
-    text = f"Привет <b>{message.chat.username}</b>! Смотри что я умею:\n\n<b>Список доступных команд</b>\
-           \n/temp - Выводит показания текущей температуры\
-           \n/news - Выводит развлекательные новости\
-           \n/img - Выводит кнопку для поиска изображений\
-           \n/srch - Выводит поисковые системы\
-           \n/exrates - Выводит курсы обмена валют и инструкцию\n\
-           \n<b>Другие возможности</b>\n1. Возможность отправить голосовое сообщение боту\n" \
-           f"2. Возможность отправить боту изображение"
+    text = f"Привет <b>{message.chat.username}</b> \U0001F44B! Смотри что я умею:\n\n<b>Список доступных команд</b>\
+           \n/temp - Выводит показания текущей температуры \U0001F326\
+           \n/news - Выводит развлекательные новости \U0001F4F0\
+           \n/img - Выводит поиск изображений \U0001F5BC\
+           \n/srch - Выводит поисковые системы \U0001F50D\
+           \n/exrates - Выводит курсы обмена валют и инструкцию \U0001F4B1\n\
+           \n<b>Другие возможности</b>\n1. Возможность отправить голосовое сообщение боту \U0001F5E3\n" \
+           f"2. Возможность отправить боту изображение \U0001F5BC\n" \
+           f"3. Возможность перевода c <b>Английского</b> на <b>Русский</b> \U0001F524"
     bot.reply_to(message, text)
 
 
@@ -26,18 +28,61 @@ def temp_info(message: telebot.types.Message):
         "https://api.openweathermap.org/data/2.5/weather?lat=55.75&lon=37.62&appid=40fa44cfcc6aaed1838bc7454a27556f",
         params)
     response = json.loads(r.content)
+    weather_emoji = {800: "Ясно \U00002600",
+                     801: "Облачно \U00002601",
+                     802: "Переменная облачность \U000026C5",
+                     803: "Облачно с прояснениями \U0001F325",
+                     804: "Пасмурно \U00002601",
+                     701: "Туман \U0001F32B",
+                     711: "Дымка \U0001F32B",
+                     600: "Небольшой снег \U00002744",
+                     601: "Снегопад \U00002744",
+                     602: "Сильный снегопад \U00002744",
+                     611: "Мокрый снег \U00002744",
+                     612: "Мокрый снег \U00002744",
+                     615: "Небольшой дождь со снегом \U00002744",
+                     616: "Дождь со снегом \U00002744",
+                     500: "Небольшой дождь \U0001F327",
+                     501: "Дождь \U0001F327",
+                     502: "Сильный дождь \U0001F327",
+                     503: "Сильный дождь \U0001F327",
+                     504: "Ливень \U000026C8",
+                     511: "Ледяной дождь \U0001F328",
+                     300: "Небольшая морось \U0001F327",
+                     301: "Морось \U0001F327",
+                     302: "Сильная морось \U0001F327",
+                     311: "Моросящий дождь \U0001F327",
+                     200: "Небольшой дождь с грозой \U000026C8",
+                     201: "Дождь с грозой \U000026C8",
+                     202: "Ливень с грозой \U000026C8",
+                     210: "Небольшая гроза \U0001F329",
+                     211: "Гроза \U0001F329",
+                     212: "Сильная гроза \U0001F329"
+                     }
+
+    weather_id = response["weather"][0]["id"]
+    if weather_id in weather_emoji:
+        w_id = weather_emoji[weather_id]
+    else:
+        w_id = "Выгляни в окно, не пойму что там за погода! \U0001F937"
+
     city = response["name"]  # Название города.
     min_temp = response["main"]["temp_min"]  # Минимальная t.
     max_temp = response["main"]["temp_max"]  # Максимальная t.
     feels_temp = response["main"]["feels_like"]  # Ощущается как t.
-    weather_cond = response["weather"][0]["description"]  # Состояние погоды.
     pressure = response["main"]["pressure"] * 0.75  # Давление в мм. рт/ст.
-    symbol = "C\u00B0"
-    bot.reply_to(message, f"<b>Погода</b>\n"
-                          f"Город: <b>{city} ({weather_cond})</b>\nМинимальная температура: <b>{min_temp} {symbol}</b>\n"
+    humidity = response["main"]["humidity"]  # Влажность в %.
+    wind_speed = response["wind"]["speed"]  # Скорость ветра.
+    wind_gust = response["wind"]["gust"]  # Порыв ветра до:
+    sunrise_timestamp = datetime.datetime.fromtimestamp(response["sys"]["sunrise"])  # Восход солнца.
+    sunset_timestamp = datetime.datetime.fromtimestamp(response["sys"]["sunset"])  # Закат солнца.
+    bot.reply_to(message, f"<b>Погода</b>\nВосход: <b>{sunrise_timestamp}</b> \U0001F31D\n"
+                          f"Город: <b>{city}</b>\nМинимальная температура: <b>{min_temp} С°</b>\n"
                           f"Максимальная температура:"
-                          f" <b>{max_temp} {symbol}</b>\nОщущается как: <b>{feels_temp} {symbol}</b>\nДавление:"
-                          f" <b>{pressure} мм. рт/ст.</b>")
+                          f" <b>{max_temp} С°</b>\nОщущается как: <b>{feels_temp} С° {w_id}</b>\nДавление:"
+                          f" <b>{pressure} мм. рт/ст.</b>\nВлажность: <b>{humidity} %</b>\nСкорость ветра:"
+                          f" <b>{wind_speed} м.с.</b>\nПорывы ветра до: <b>{wind_gust} м.с.</b>\n"
+                          f"Закат: <b>{sunset_timestamp}</b> \U0001F31A")
 
 
 @bot.message_handler(commands=["news"])
@@ -112,20 +157,23 @@ def currencies(message: telebot.types.Message):
            ( <b>Валюта Б</b> )\
            ( <b>Количество Б в А</b> )\n\n<b>Валюта А</b> - Название валюты, цену которой хотите узнать" \
            "\n<b>Валюта Б</b> - Название валюты, в которой надо узнать цену первой валюты" \
-           "\n<b>Количество Б в А</b> - Количество первой валюты\n\n<b>Доступные валюты</b>"
+           "\n<b>Количество Б в А</b> - Количество первой валюты\n\n<b>Доступные валюты" \
+           " \U0001F4B5 \U0001F4B6 \U000020BD</b>"
     for key in currencies_.keys():
         text = "\n".join((text, key))
     bot.reply_to(message, text)
 
 
 @bot.message_handler(content_types=["text"])
-def converter(message: telebot.types.Message):
-    greetings = "Привет! привет! Приветик! приветик! Приветствую! Привет привет Приветик приветик Приветствую" \
-                "приветствую прива Добрый день добрый день" \
-                "Доброе утро доброе утро Hi hi Hello hello".split(" ")
-    if message.text in greetings:
-        bot.reply_to(message, f"Привет <b>{message.chat.username}</b>, меня зовут <b>BobCod</b> и я умный бот.")
-    else:
+def send_txt(message: telebot.types.Message):
+    try:
+        text_input = message.text
+        payload = f"from=en&to=ru&text={text_input}"
+        response = requests.post("https://translo.p.rapidapi.com/api/v3/translate", data=payload.encode("utf-8"),
+                                 headers=headers)
+        answer = response.json()["translated_text"]
+        bot.reply_to(message, f"Перевод: <b>{answer}</b>")
+    except KeyError:
         try:
             values = message.text.split(" ")
             if len(values) != 3:
