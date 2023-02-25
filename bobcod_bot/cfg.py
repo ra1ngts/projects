@@ -12,11 +12,14 @@ params = {
 api = NewsDataApiClient(apikey="")
 
 currencies_ = {
-    "доллар": "USD",
-    "евро": "EUR",
-    "рубль": "RUB"
+    "доллар".lower(): "USD",
+    "евро".lower(): "EUR",
+    "рубль".lower(): "RUB"
 }
 
 headers = {
-    "apikey": ""
+    "apikey": "",
+    "content-type": "application/x-www-form-urlencoded",
+    "X-RapidAPI-Key": "",
+    "X-RapidAPI-Host": "translo.p.rapidapi.com"
 }
