@@ -32,5 +32,5 @@ class ExchangeConverter:
         response = json.loads(r.content)
         new_price = response["rates"][quote_key] * float(amount)
         new_price = round(new_price, 3)
-        message = f"Цена {amount} {base} в {quote} = {new_price}"
+        message = f"Цена <b>{amount} {base}</b> в {quote} = <b>{new_price}</b>"
         return message
