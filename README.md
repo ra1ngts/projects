@@ -140,6 +140,7 @@
 - Allows you to search for images
 - Allows you to use search engines
 - Allows you to exchange currencies at the current rate
+- __Ability to translate the entered text from English into Russian (NEW!)__
 
 #### For what :
 - A practice while learning.
@@ -159,9 +160,10 @@
 |     1| Python    |
 
 #### Demonstration :
-![BobCod_Bot_scr_1](https://user-images.githubusercontent.com/122100029/219960792-d3b76938-fc72-4cd7-9a19-bac9a79c1ccc.jpg)
-![BobCod_Bot_scr_2](https://user-images.githubusercontent.com/122100029/219960805-59a9ec1b-81f7-4de1-9f1c-512a05a73f93.jpg)
-![BobCod_Bot_scr_3](https://user-images.githubusercontent.com/122100029/219960815-38c63951-d98b-483e-a6ea-b74ea46c860a.jpg)
+![BobCod_Bot_scr_1](https://user-images.githubusercontent.com/122100029/221374038-fc7958d4-db39-4edb-970d-c3e8c62a98e1.jpg)
+![BobCod_Bot_scr_2](https://user-images.githubusercontent.com/122100029/221374039-b6fd50b1-b7aa-46d3-82af-3e39684e556c.jpg)
+![BobCod_Bot_scr_3](https://user-images.githubusercontent.com/122100029/221374041-4cbc8dce-72f6-40ec-8111-628b537e799b.jpg)
+![BobCod_Bot_scr_4](https://user-images.githubusercontent.com/122100029/221374042-13d96a7b-3a89-4fa1-930a-6443b94d1dc0.jpg)
 
 ### :robot: "CryptossoBot"
 
