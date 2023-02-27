@@ -214,7 +214,7 @@
 
 #### Install :
 - Folder name: __exch_bot__
-  - Files in a folder: `exch_bot.py`, `extensions.py` and `cfg.py`
+  - Files in a folder: `exch_bot.py`, `extensions.py` and `config.py`
 - On the repository page сlick the `Code` button in the top right corner. A menu will pop up in which you need to select `Download ZIP`.
 - Save and extract the folder to any convenient location.
 
