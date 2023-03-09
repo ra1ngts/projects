@@ -1,6 +1,7 @@
 from telebot import *
 from cfg import TOKEN, params, api, currencies_, headers
 from extensions import CommandException, ExchangeConverter
+from googletrans import Translator
 import requests
 import json
 import datetime
@@ -167,26 +168,29 @@ def currencies(message: telebot.types.Message):
 @bot.message_handler(content_types=["text"])
 def send_txt(message: telebot.types.Message):
     try:
-        text_input = message.text
-        payload = f"from=en&to=ru&text={text_input}"
-        response = requests.post("https://translo.p.rapidapi.com/api/v3/translate", data=payload.encode("utf-8"),
-                                 headers=headers)
-        answer = response.json()["translated_text"]
-        bot.reply_to(message, f"Перевод: <b>{answer}</b>")
-    except KeyError:
-        try:
-            values = message.text.split(" ")
-            if len(values) != 3:
-                raise CommandException(f"<b>{message.chat.username}</b> Что бы узнать список доступных команд введите:"
-                                       f" /help")
-            quote, base, amount = values
-            answer = ExchangeConverter.get_price(quote, base, amount)
-        except CommandException as e:
-            bot.reply_to(message, f"Ошибка ввода команды:\n{e}")
-        except Exception as e:
-            bot.reply_to(message, f"Неизвестная ошибка:\n{e}")
+        if message.text.isalpha():
+            translator = Translator()
+            src = "en"
+            destination = "ru"
+            translated_text = translator.translate(message.text, src=src, dest=destination).text
+            bot.reply_to(message, f"Перевод: <b>{translated_text}</b>")
         else:
-            bot.reply_to(message, answer)
+            try:
+                values = message.text.split(" ")
+                if len(values) != 3:
+                    raise CommandException(
+                        f"<b>{message.chat.username}</b> Что бы узнать список доступных команд введите:"
+                        f" /help")
+                quote, base, amount = values
+                answer = ExchangeConverter.get_price(quote, base, amount)
+            except CommandException as e:
+                bot.reply_to(message, f"Ошибка ввода команды:\n{e}")
+            except Exception as e:
+                bot.reply_to(message, f"Неизвестная ошибка:\n{e}")
+            else:
+                bot.reply_to(message, answer)
+    except KeyError as e:
+        bot.reply_to(message, f"Ошибка ввода:\n{e}")
 
 
 @bot.message_handler(content_types=["voice"])
