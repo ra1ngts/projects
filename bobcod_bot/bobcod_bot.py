@@ -1,5 +1,5 @@
 from telebot import *
-from cfg import TOKEN, params, api, currencies_, headers
+from cfg import TOKEN, params, api, currencies_
 from extensions import CommandException, ExchangeConverter
 from googletrans import Translator
 import requests
@@ -26,7 +26,7 @@ def start_help(message: telebot.types.Message):
 @bot.message_handler(commands=["temp"])
 def temp_info(message: telebot.types.Message):
     r = requests.get(
-        "https://api.openweathermap.org/data/2.5/weather?lat=55.75&lon=37.62&appid=40fa44cfcc6aaed1838bc7454a27556f",
+        "https://api.openweathermap.org/data/2.5/weather?lat=55.75&lon=37.62&appid=",
         params)
     response = json.loads(r.content)
     weather_emoji = {800: "Ясно \U00002600",
@@ -179,8 +179,7 @@ def send_txt(message: telebot.types.Message):
                 values = message.text.split(" ")
                 if len(values) != 3:
                     raise CommandException(
-                        f"<b>{message.chat.username}</b> Что бы узнать список доступных команд введите:"
-                        f" /help")
+                        "Что бы узнать список доступных команд введите: /help")
                 quote, base, amount = values
                 answer = ExchangeConverter.get_price(quote, base, amount)
             except CommandException as e:
@@ -200,7 +199,7 @@ def voice_message(message: telebot.types.Message):
 
 @bot.message_handler(content_types=["photo"])
 def photo_message(message: telebot.types.Message):
-    bot.send_message(message.chat.id, f"Очень красивая фотография <b>{message.chat.username}</b>")
+    bot.send_message(message.chat.id, f"Очень красивая фотография <b>{message.chat.username}</b>.")
 
 
 bot.polling()
