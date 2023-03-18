@@ -163,7 +163,7 @@
 ![BobCod_Bot_scr_1](https://user-images.githubusercontent.com/122100029/221374038-fc7958d4-db39-4edb-970d-c3e8c62a98e1.jpg)
 ![BobCod_Bot_scr_2](https://user-images.githubusercontent.com/122100029/221374039-b6fd50b1-b7aa-46d3-82af-3e39684e556c.jpg)
 ![BobCod_Bot_scr_3](https://user-images.githubusercontent.com/122100029/221374041-4cbc8dce-72f6-40ec-8111-628b537e799b.jpg)
-![BobCod_Bot_scr_4](https://user-images.githubusercontent.com/122100029/221374042-13d96a7b-3a89-4fa1-930a-6443b94d1dc0.jpg)
+![BobCod_Bot_scr_4](https://user-images.githubusercontent.com/122100029/225538923-7f8c56d3-238c-4c2f-acfb-22583af0c708.jpg)
 
 ### :robot: "CryptossoBot"
 
