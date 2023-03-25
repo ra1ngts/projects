@@ -202,4 +202,7 @@ def photo_message(message: telebot.types.Message):
     bot.send_message(message.chat.id, f"Очень красивая фотография <b>{message.chat.username}</b>.")
 
 
-bot.polling()
+try:
+    bot.infinity_polling()
+except Exception as e:
+    print(e)
