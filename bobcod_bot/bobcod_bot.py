@@ -1,12 +1,13 @@
 from telebot import *
-from cfg import TOKEN, params, api, currencies_
+from decouple import config
+from cfg import params, api, currencies_
 from extensions import CommandException, ExchangeConverter
 from googletrans import Translator
 import requests
 import json
 import datetime
 
-bot = telebot.TeleBot(TOKEN, parse_mode="HTML")
+bot = telebot.TeleBot(config('TOKEN'), parse_mode="HTML")
 
 
 @bot.message_handler(commands=["start", "help"])
@@ -26,7 +27,7 @@ def start_help(message: telebot.types.Message):
 @bot.message_handler(commands=["temp"])
 def temp_info(message: telebot.types.Message):
     r = requests.get(
-        "https://api.openweathermap.org/data/2.5/weather?lat=55.75&lon=37.62&appid=",
+        "https://api.openweathermap.org/data/2.5/weather?lat=55.75&lon=37.62&appid=40fa44cfcc6aaed1838bc7454a27556f",
         params)
     response = json.loads(r.content)
     weather_emoji = {800: "Ясно \U00002600",
