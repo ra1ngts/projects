@@ -1,5 +1,5 @@
 import telebot
-from cfg import keys, TOKEN
+from cfg import TOKEN, keys
 from extensions import ConversionException, CryptoConverter
 
 bot = telebot.TeleBot(TOKEN, parse_mode="HTML")
