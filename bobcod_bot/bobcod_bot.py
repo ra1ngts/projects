@@ -1,13 +1,12 @@
 from telebot import *
-from decouple import config
-from cfg import params, api, currencies_
+from cfg import TOKEN, params, api, currencies_
 from extensions import CommandException, ExchangeConverter
 from googletrans import Translator
 import requests
 import json
 import datetime
 
-bot = telebot.TeleBot(config('TOKEN'), parse_mode="HTML")
+bot = telebot.TeleBot(TOKEN, parse_mode="HTML")
 
 
 @bot.message_handler(commands=["start", "help"])
