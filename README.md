@@ -132,7 +132,7 @@
 ---
 
 #### About programme :
-- __"BobCodBot"__ - This is a smart telegram bot that can do a lot.
+- __"[BobCodBot](https://t.me/BobCodBot)"__ - This is a smart telegram bot that can do a lot.
 
 #### Peculiarities :
 - Lets you know the current weather
