@@ -21,7 +21,7 @@
 - Visualization is carried out by means of data output to the console. 
 - The programme does not have a ***graphical interface***.
 
-#### Install :
+#### Installation :
 - Folder name: __currency_analysis__
   - Files in a folder: `currency_analysis.py` and `data.json`
 - On the repository page сlick the `Code` button in the top right corner. A menu will pop up in which you need to select `Download ZIP`.
@@ -52,7 +52,7 @@
 - Visualization is carried out by means of data output to the console. 
 - The programme does not have a ***graphical interface***.
 
-#### Install :
+#### Installation :
 - File name: __cred_wallet.py__
 - Click the `Code` button in the top right corner. A menu will pop up in which you need to select `Download ZIP`.
 - Save and extract the folder to any convenient location.
@@ -79,7 +79,7 @@
 - Visualization is carried out by means of data output to the console. 
 - The programme does not have a ***graphical interface***.
 
-#### Install :
+#### Installation :
 - File name: __pass_gen.py__
 - Click the `Code` button in the top right corner. A menu will pop up in which you need to select `Download ZIP`.
 - Save and extract the folder to any convenient location.
@@ -112,7 +112,7 @@
 - Visualization is carried out by means of data output to the console. 
 - The programme does not have a ***graphical interface***.
 
-#### Install :
+#### Installation :
 - Folder name: __pass_manage__
   - Files in a folder: `pass_manage.py` and `user.json`
 - On the repository page сlick the `Code` button in the top right corner. A menu will pop up in which you need to select `Download ZIP`.
@@ -148,7 +148,7 @@
 #### Visualization :
 - Interaction with the bot and displaying information is carried out directly in the ***"Telegram"*** application. 
 
-#### Install :
+#### Installation :
 - Folder name: __bobcod_bot__
   - Files in a folder: `bobcod_bot.py`, `extensions.py` and `cfg.py`
 - On the repository page сlick the `Code` button in the top right corner. A menu will pop up in which you need to select `Download ZIP`.
@@ -181,7 +181,7 @@
 #### Visualization :
 - Interaction with the bot and displaying information is carried out directly in the ***"Telegram"*** application. 
 
-#### Install :
+#### Installation :
 - Folder name: __cryptosso_bot__
   - Files in a folder: `сryptosso_bot.py`, `extensions.py` and `cfg.py`
 - On the repository page сlick the `Code` button in the top right corner. A menu will pop up in which you need to select `Download ZIP`.
@@ -212,7 +212,7 @@
 #### Visualization :
 - Interaction with the bot and displaying information is carried out directly in the ***"Telegram"*** application. 
 
-#### Install :
+#### Installation :
 - Folder name: __exch_bot__
   - Files in a folder: `exch_bot.py`, `extensions.py` and `config.py`
 - On the repository page сlick the `Code` button in the top right corner. A menu will pop up in which you need to select `Download ZIP`.
