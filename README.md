@@ -14,6 +14,11 @@
 - Git
 - GitHub
 
+#### How to run :
+- Clone the repository.
+- Open the required project folder.
+- Run the Python files using Python.
+
 ## Projects :
 
 ### :chart_with_downwards_trend: Currency Portfolio Analysis
