@@ -1,228 +1,147 @@
-### :chart_with_downwards_trend: "Currency portfolio analysis"
+# :computer: Python Projects
 
 ---
 
-#### About programme :
-- __"Currency analysis"__ - allows you to monitor currency data, weekly.
+#### About project :
+- __Python Projects__ — a collection of small Python applications and Telegram bots developed while learning and practicing Python.
+- The repository contains several independent projects focused on data processing, automation, file handling, API integration, and working with external services.
 
-#### Peculiarities :
-- Allows you to add weeks.
-- Allows you to copy weeks.
-- Allows you to add currency information.
-- Allows you to change currency information.
-- Allows you to display statistics.
-- Allows you to display the distribution of currencies.
-- Allows you to save all information in a separate *.json
+#### Technologies and Tools :
+- Python
+- JSON
+- REST API
+- Telegram Bot API
+- Git
+- GitHub
 
-#### For what :
-- A practice while learning.
+## Projects :
 
-#### Visualization :
-- Visualization is carried out by means of data output to the console. 
-- The programme does not have a ***graphical interface***.
+### :chart_with_downwards_trend: Currency Portfolio Analysis
 
-#### Installation :
-- Folder name: __currency_analysis__
-  - Files in a folder: `currency_analysis.py` and `data.json`
-- On the repository page сlick the `Code` button in the top right corner. A menu will pop up in which you need to select `Download ZIP`.
-- Save and extract the folder to any convenient location.
+---
 
-#### Language :
-| Rank | Languages |
-|-----:|-----------|
-|     1| Python    |
+#### About project :
+- __Currency Portfolio Analysis__ is a console-based application for tracking and analyzing currency data by week.
+
+#### Features :
+- Add and manage weekly records.
+- Copy existing weeks.
+- Add and edit currency information.
+- Display statistics.
+- Display currency distribution.
+- Store data in a separate JSON file.
+
+#### Source code :
+- [View source code](https://github.com/ra1ngts/projects/tree/master/currency_analysis)
 
 #### Demonstration :
-![Сurrency_analysis_scr_1](https://user-images.githubusercontent.com/122100029/214655743-02707de5-10fc-47e3-8977-54d3b30d110c.jpg)
+<img width="1443" height="783" alt="Сurrency_analysis_scr_1" src="https://github.com/user-attachments/assets/395a43d8-a359-49d3-8bd2-8a8650a98692" />
 
-### :dollar: "Credit wallet"
-
----
-
-#### About programme :
-- __"Credit wallet"__ - is an imitation of the work of a credit wallet.
-
-#### Peculiarities :
-- There are different levels of credit cards.
-
-#### For what :
-- A practice while learning.
-
-#### Visualization :
-- Visualization is carried out by means of data output to the console. 
-- The programme does not have a ***graphical interface***.
-
-#### Installation :
-- File name: __cred_wallet.py__
-- Click the `Code` button in the top right corner. A menu will pop up in which you need to select `Download ZIP`.
-- Save and extract the folder to any convenient location.
-
-#### Language :
-| Rank | Languages |
-|-----:|-----------|
-|     1| Python    |
-
-### :lock: "Password generator"
+### :dollar: Credit Wallet
 
 ---
 
-#### About programme :
-- __"Password generator"__ - program for creating unique passwords from letters, numbers and symbols.
+#### About project :
+- __Credit Wallet__ is a console-based application that simulates the basic functionality of a credit wallet.
 
-#### Peculiarities :
-- You can set the password length.
+#### Features :
+- Different credit card levels.
+- Basic credit wallet operations.
 
-#### For what :
-- A practice while learning.
+#### Source code :
+- [View source code](https://github.com/ra1ngts/projects/blob/master/cred_wallet.py)
 
-#### Visualization :
-- Visualization is carried out by means of data output to the console. 
-- The programme does not have a ***graphical interface***.
-
-#### Installation :
-- File name: __pass_gen.py__
-- Click the `Code` button in the top right corner. A menu will pop up in which you need to select `Download ZIP`.
-- Save and extract the folder to any convenient location.
-
-#### Language :
-| Rank | Languages |
-|-----:|-----------|
-|     1| Python    |
-
-### :closed_lock_with_key: "Password manager"
+### :lock: Password Generator
 
 ---
 
-#### About programme :
-- __"Password manager"__ - program for writing and storing passwords from web sites.
+#### About project :
+- __Password Generator__ is a console-based application for generating passwords using letters, numbers, and symbols.
 
-#### Peculiarities :
-- Allows you to add a password.
-- Allows you to generate a password (two difficulty levels to choose from).
-- Allows you to find the password.
-- Allows you to find duplicate passwords.
-- Allows you to change the password.
-- Allows you to remove the password.
-- Allows you to save all information in a separate *.json
+#### Features :
+- Customizable password length.
+- Generation of unique passwords.
 
-#### For what :
-- A practice while learning.
+#### Source code :
+- [View source code](https://github.com/ra1ngts/projects/blob/master/pass_gen.py)
 
-#### Visualization :
-- Visualization is carried out by means of data output to the console. 
-- The programme does not have a ***graphical interface***.
+### :closed_lock_with_key: Password Manager
 
-#### Installation :
-- Folder name: __pass_manage__
-  - Files in a folder: `pass_manage.py` and `user.json`
-- On the repository page сlick the `Code` button in the top right corner. A menu will pop up in which you need to select `Download ZIP`.
-- Save and extract the folder to any convenient location.
+---
 
-#### Language :
-| Rank | Languages |
-|-----:|-----------|
-|     1| Python    |
+#### About project :
+- __Password Manager__ is a console-based application for storing and managing website passwords.
+
+#### Features :
+- Add passwords.
+- Generate passwords with two difficulty levels.
+- Search for saved passwords.
+- Find duplicate passwords.
+- Edit passwords.
+- Delete passwords.
+- Store data in a separate JSON file.
+
+#### Source code :
+- [View source code](https://github.com/ra1ngts/projects/tree/master/pass_manage)
 
 #### Demonstration :
-![Password manager_scr_1](https://user-images.githubusercontent.com/122100029/217311351-401f3076-9d2b-47d5-9f9f-f8f8da00e6a7.jpg)
-![Password manager_scr_2](https://user-images.githubusercontent.com/122100029/217311370-5e080ed3-545e-46b3-844f-df1786bb378f.jpg)
+<img width="1443" height="783" alt="Password manager_scr_1" src="https://github.com/user-attachments/assets/9376367e-d9cc-4608-87a9-ed53ff0920d5" />
+<img width="1443" height="783" alt="Password manager_scr_2" src="https://github.com/user-attachments/assets/ca659672-a03e-48a2-bb7d-25eac244d06c" />
 
-### :robot: "BobCodBot"
-
----
-
-#### About programme :
-- __"[BobCodBot](https://t.me/BobCodBot)"__ - This is a smart telegram bot that can do a lot.
-
-#### Peculiarities :
-- Lets you know the current weather
-- Let you know the world's entertainment news
-- Allows you to search for images
-- Allows you to use search engines
-- Allows you to exchange currencies at the current rate
-- __Ability to translate the entered text from English into Russian (NEW!)__
-
-#### For what :
-- A practice while learning.
-
-#### Visualization :
-- Interaction with the bot and displaying information is carried out directly in the ***"Telegram"*** application. 
-
-#### Installation :
-- Folder name: __bobcod_bot__
-  - Files in a folder: `bobcod_bot.py`, `extensions.py` and `cfg.py`
-- On the repository page сlick the `Code` button in the top right corner. A menu will pop up in which you need to select `Download ZIP`.
-- Save and extract the folder to any convenient location.
-
-#### Language :
-| Rank | Languages |
-|-----:|-----------|
-|     1| Python    |
-
-#### Demonstration :
-![BobCod_Bot_scr_1](https://user-images.githubusercontent.com/122100029/221374038-fc7958d4-db39-4edb-970d-c3e8c62a98e1.jpg)
-![BobCod_Bot_scr_2](https://user-images.githubusercontent.com/122100029/221374039-b6fd50b1-b7aa-46d3-82af-3e39684e556c.jpg)
-![BobCod_Bot_scr_3](https://user-images.githubusercontent.com/122100029/221374041-4cbc8dce-72f6-40ec-8111-628b537e799b.jpg)
-![BobCod_Bot_scr_4](https://user-images.githubusercontent.com/122100029/225538923-7f8c56d3-238c-4c2f-acfb-22583af0c708.jpg)
-
-### :robot: "CryptossoBot"
+### :robot: BobCodBot
 
 ---
 
-#### About programme :
-- __"CryptossoBot"__ - This is a telegram bot that can count cryptocurrency in another currency.
+#### About project :
+- __BobCodBot__ is a Telegram bot that provides several useful features and services.
 
-#### Peculiarities :
-- Сan convert one cryptocurrency to another.
+#### Features :
+- Get current weather information.
+- Search entertainment news.
+- Search for images.
+- Use search engines.
+- Convert currencies using current exchange rates.
+- Translate text from English to Russian.
 
-#### For what :
-- A practice while learning.
-
-#### Visualization :
-- Interaction with the bot and displaying information is carried out directly in the ***"Telegram"*** application. 
-
-#### Installation :
-- Folder name: __cryptosso_bot__
-  - Files in a folder: `сryptosso_bot.py`, `extensions.py` and `cfg.py`
-- On the repository page сlick the `Code` button in the top right corner. A menu will pop up in which you need to select `Download ZIP`.
-- Save and extract the folder to any convenient location.
-
-#### Language :
-| Rank | Languages |
-|-----:|-----------|
-|     1| Python    |
+#### Source code :
+- [View source code](https://github.com/ra1ngts/projects/tree/master/bobcod_bot)
 
 #### Demonstration :
-![Cryptosso_Bot_scr_1](https://user-images.githubusercontent.com/122100029/220145501-a72d353e-b345-4dd9-a3e8-fe9e1a0190c3.jpg)
-![Cryptosso_Bot_scr_2](https://user-images.githubusercontent.com/122100029/220145525-133cee66-fd38-4d25-bf72-e8591f68aa39.jpg)
+<img width="1445" height="938" alt="BobCod_Bot_scr_1" src="https://github.com/user-attachments/assets/02985115-7473-4d2c-94e7-7972271fa94c" />
+<img width="1445" height="938" alt="BobCod_Bot_scr_2" src="https://github.com/user-attachments/assets/5123dcfe-a3f5-4000-a458-fe74e1ac458c" />
+<img width="1445" height="938" alt="BobCod_Bot_scr_3" src="https://github.com/user-attachments/assets/9ab4bcec-ccf7-4acf-b386-bc9d2dd7d0b8" />
+<img width="1445" height="938" alt="BobCod_Bot_scr_4" src="https://github.com/user-attachments/assets/860003e5-601e-43d6-9f59-3ba8918a6f6c" />
 
-### :robot: "Ex_Changer_Bot"
+### :robot: CryptossoBot
 
 ---
 
-#### About programme :
-- __"Ex_Changer_Bot"__ - This is a telegram bot that calculates exchange rates.
+#### About project :
+- __CryptossoBot__ is a Telegram bot for converting cryptocurrency values between different currencies.
 
-#### Peculiarities :
-- Able to count one currency into another.
+#### Features :
+- Convert one cryptocurrency to another currency.
 
-#### For what :
-- A practice while learning.
-
-#### Visualization :
-- Interaction with the bot and displaying information is carried out directly in the ***"Telegram"*** application. 
-
-#### Installation :
-- Folder name: __exch_bot__
-  - Files in a folder: `exch_bot.py`, `extensions.py` and `config.py`
-- On the repository page сlick the `Code` button in the top right corner. A menu will pop up in which you need to select `Download ZIP`.
-- Save and extract the folder to any convenient location.
-
-#### Language :
-| Rank | Languages |
-|-----:|-----------|
-|     1| Python    |
+#### Source code :
+- [View source code](https://github.com/ra1ngts/projects/tree/master/cryptosso_bot)
 
 #### Demonstration :
-![Exchanger_Bot_scr_1](https://user-images.githubusercontent.com/122100029/220149203-4365a6d8-b088-4561-a67a-14ee908e7485.jpg)
-![Exchanger_Bot_scr_2](https://user-images.githubusercontent.com/122100029/220149222-a678e8b3-ec61-48f1-91ba-cc7db568d3f5.jpg)
+<img width="1445" height="938" alt="Cryptosso_Bot_scr_1" src="https://github.com/user-attachments/assets/9887b9d0-4064-4343-b79f-48a5ff2e8f56" />
+<img width="1445" height="938" alt="Cryptosso_Bot_scr_2" src="https://github.com/user-attachments/assets/15b22a8e-3a69-4a72-ad30-2043d6b73b1f" />
+
+### :robot: Ex_Changer_Bot
+
+---
+
+#### About project :
+- __Ex_Changer_Bot__ is a Telegram bot for calculating exchange rates between different currencies.
+
+#### Features :
+- Convert one currency into another.
+
+#### Source code :
+- [View source code](https://github.com/ra1ngts/projects/tree/master/exch_bot)
+
+#### Demonstration :
+<img width="1445" height="938" alt="Exchanger_Bot_scr_1" src="https://github.com/user-attachments/assets/eafc30ac-c642-4df2-bd31-874fa2359605" />
+<img width="1445" height="938" alt="Exchanger_Bot_scr_2" src="https://github.com/user-attachments/assets/ab69617b-23b5-4248-854d-5c15f13052b6" />
